@@ -1,15 +1,34 @@
 #! /usr/bin/env python
 
-checkboxList = ['0', '1']
-first_dropList = ['A', 'B', 'C']
-second_dropList = ['D', 'E', 'F', 'G']
+from itertools import product, combinations
 
-all_combos = []
 
-for c in checkboxList:
-    for f in first_dropList:
-        for s in second_dropList:
-            value = ' '.join([c, f, s])
-            all_combos.append(value)
+def all_pairs(a, b, c):
 
-print(all_combos)
+    combos = []
+
+    unique_pairs = set()
+
+    every_set = map(' '.join, product(a, b, c))
+
+    for item in every_set:
+
+        parts = item.split()
+
+        inner_perms = {''.join(a) for a in combinations(parts, 2)}
+
+        difference = inner_perms.difference(unique_pairs)
+
+        unique_pairs.update(difference)
+
+        if difference:
+            combos.append(item)
+
+    print(len(combos))
+
+
+list_a = ['0', '1']
+list_b = ['A', 'B', 'C']
+list_c = ['D', 'E', 'F', 'G']
+
+all_pairs(list_a, list_b, list_c)
