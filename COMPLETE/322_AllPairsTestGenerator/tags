@@ -1,0 +1,20 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+all_pairs	solution.py	/^def all_pairs(*args):$/;"	f
+combos	solution.py	/^combos = all_pairs(list_a, list_b, list_c)$/;"	v
+combos	solution.py	/^combos = all_pairs(list_a, list_b, list_c, list_d)$/;"	v
+create_combos	solution.py	/^def create_combos(every_set, unique_pairs, combos, required):$/;"	f
+list_a	solution.py	/^list_a = ['0', '1', '2', '3', '4']$/;"	v
+list_a	solution.py	/^list_a = ['0', '1', '2', '3']$/;"	v
+list_a	solution.py	/^list_a = ['0', '1']$/;"	v
+list_b	solution.py	/^list_b = ['A', 'B', 'C', 'D', 'E']$/;"	v
+list_b	solution.py	/^list_b = ['A', 'B', 'C', 'D']$/;"	v
+list_b	solution.py	/^list_b = ['A', 'B', 'C']$/;"	v
+list_c	solution.py	/^list_c = ['D', 'E', 'F', 'G']$/;"	v
+list_c	solution.py	/^list_c = ['E', 'F', 'G', 'H', 'I']$/;"	v
+list_c	solution.py	/^list_c = ['F', 'G', 'H', 'I']$/;"	v
+list_d	solution.py	/^list_d = ['J', 'K', 'L']$/;"	v
